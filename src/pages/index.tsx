@@ -16,6 +16,14 @@ export default function Home() {
           <span>£15</span>
         </footer>
       </Product>
+      <Product>
+        <Image src={tshirt1} width={520} height={480} alt=""/>
+
+        <footer>
+          <strong>Tshirt X</strong>
+          <span>£15</span>
+        </footer>
+      </Product>
     </HomeContainer>
   )
 }
