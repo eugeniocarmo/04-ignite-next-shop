@@ -22,6 +22,6 @@ export default function App({ Component, pageProps }: AppProps) {
     </Container>
   )
 }
-// carry on with the project from Strutura da Home ...
+// carry on with the project from Estrutura da Home ...14'
 
 
