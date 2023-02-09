@@ -13,15 +13,15 @@ export default function Home() {
 
         <footer>
           <strong>Tshirt X</strong>
-          <span>£15</span>
+          <span>£15</span>  
         </footer>
       </Product>
       <Product>
-        <Image src={tshirt1} width={520} height={480} alt=""/>
+        <Image src={tshirt2} width={520} height={480} alt=""/>
 
         <footer>
-          <strong>Tshirt X</strong>
-          <span>£15</span>
+          <strong>Tshirt 2</strong>
+          <span>£18</span>
         </footer>
       </Product>
     </HomeContainer>
