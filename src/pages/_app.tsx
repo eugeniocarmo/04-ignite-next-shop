@@ -22,6 +22,6 @@ export default function App({ Component, pageProps }: AppProps) {
     </Container>
   )
 }
-// carry on with carrossel part of the project.
+// starting creating shop with stripe
 
 
