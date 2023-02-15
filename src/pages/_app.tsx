@@ -22,6 +22,6 @@ export default function App({ Component, pageProps }: AppProps) {
     </Container>
   )
 }
-// starting creating shop with stripe
+// Next: Buscando produtos dp Stripe.
 
 
