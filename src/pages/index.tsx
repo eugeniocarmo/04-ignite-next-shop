@@ -6,11 +6,12 @@ import { useKeenSlider } from 'keen-slider/react'
 import { stripe } from "../lib/stripe";
 import { HomeContainer, Product } from "../styles/pages/home";
 
-import tshirt1 from '../assets/tshirts/1.png';
-import tshirt2 from '../assets/tshirts/2.png';
-import tshirt3 from '../assets/tshirts/3.png';
+// import tshirt1 from '../assets/tshirts/1.png';
+// import tshirt2 from '../assets/tshirts/2.png';
+// import tshirt3 from '../assets/tshirts/3.png';
 
 import 'keen-slider/keen-slider.min.css';
+import Stripe from "stripe";
 
 interface HomeProps {
   products: {
@@ -20,7 +21,6 @@ interface HomeProps {
     price: number;
   }[]
 }
-
 
 export default function Home({ products }: HomeProps) {
   const [sliderRef] = useKeenSlider({
@@ -36,11 +36,11 @@ export default function Home({ products }: HomeProps) {
       {products.map(product => {
         return (
           <Product className="keen-slider__slide">
-            <Image src={tshirt1} width={520} height={480} alt=""/>
+            <Image src={product.imageUrl} width={520} height={480} alt=""/>
 
             <footer>
-              <strong>Tshirt 1</strong>
-              <span>£15</span>  
+              <strong>{product.name}</strong>
+              <span>{product.price}</span>  
         </footer>
       </Product>
           )
@@ -61,7 +61,7 @@ export const getServerSideProps: GetServerSideProps = async () => {
       id: product.id,
       name: product.name,
       imageUrl: product.images[0],
-      price: price.unity_amount/100,
+      price: price.unit_amount / 100,
     }
   
   

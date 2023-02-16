@@ -22,6 +22,6 @@ export default function App({ Component, pageProps }: AppProps) {
     </Container>
   )
 }
-// Next: Buscando produtos dp Stripe.
+// Next: Utilizando o SSG
 
 
