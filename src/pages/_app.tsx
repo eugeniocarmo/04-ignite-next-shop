@@ -22,6 +22,6 @@ export default function App({ Component, pageProps }: AppProps) {
     </Container>
   )
 }
-
+// next: Formatando preço.
 
 
